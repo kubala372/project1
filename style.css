@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #121116;
+    --background-color2: #17151c;
+    --font-color: #f0f8ff;
+    --queue: #F29FBD50;
+    --que: #F29FBD;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+}
+
+.main {
+    width: 85vw;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    display: flex;
+}
+
+.header h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin: 5px 30px;
+}
+
+.navbar ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navbar ul li::after {
+    background-color: var(--que);
+    position: absolute;
+    transition: 0.5s;
+    bottom: -3px;
+    content: '';
+    height: 2px;
+    width: 0%;
+    left: 0;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.main_article {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--background-color2);
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    padding: 100px;
+    display: flex;
+    height: 800px;
+    width: 85vw;
+}
+
+.text h1 {
+    font-size: 70px;
+}
+
+.text p {
+    padding-bottom: 35px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.buttons a:nth-child(1) {
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 10px;
+    background-color: #F29FBD;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 20px;
+}
+
+.buttons a:nth-child(2) {
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 10px;
+    background-color: var(--queue);
+    border-radius: 10px;
+    color: var(--que);
+    padding: 20px;
+}
+
+.buttons a:nth-child(1):hover {
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 10px;
+    background-color: #F29FBD;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: 0.5s;
+    padding: 22px;
+}
+
+.buttons a:nth-child(2):hover {
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 10px;
+    background-color: var(--queue);
+    border-radius: 10px;
+    margin-right: 5px;
+    color: var(--que);
+    transition: 0.5s;
+    padding: 22px;
+}
+
+.img {
+    position: sticky;
+    padding: 10px;
+    left: 50%;
+}
+
+.img img{
+    border-radius: 25px;
+    height: 50vh;
+    width: 40vw;
+}
+
+.second_article {
+    display: grid;
+    grid-template-columns: repeat(4, 21.25vw);
+    grid-template-rows: repeat(4, 14vh);
+    margin-top: 10px;
+}
+
+.section_one {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--background-color2);
+    grid-column-start: 1;
+    border-radius: 30px;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 30px;
+    margin: 10px;
+    float: left;
+}
+
+.section_one h1 {
+    padding: 5px 0px 5px 0px;
+}
+
+.section_two {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--background-color2);
+    grid-column-start: 3;
+    border-radius: 30px;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 30px;
+    margin: 10px;
+    float: left;
+}
+
+.section_two h1 {
+    padding: 5px 0px 5px 0px;
+}
+
+.section_three {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--background-color2);
+    grid-column-start: 1;
+    border-radius: 30px;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    padding: 30px;
+    margin: 10px;
+    float: left;
+}
+
+.section_three h1 {
+    padding: 5px 0px 5px 0px;
+}
+
+.section_four {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--background-color2);
+    grid-column-start: 3;
+    border-radius: 30px;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    padding: 30px;
+    margin: 10px;
+    float: left;
+}
+
+.section_four h1 {
+    padding: 5px 0px 5px 0px;
+}
